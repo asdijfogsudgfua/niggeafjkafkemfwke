@@ -719,13 +719,16 @@ local args = {
 game:GetService("ReplicatedStorage").API["ShopAPI/BuyItem"]:InvokeServer(unpack(args))
 end)
 local CategoryVariableHere= Lib:Category("Auto Buy")
-CategoryVariableHere:Button("Buy Fossil_Egg",function()
-     local args = {
+CategoryVariableHere:Button("Buy Ocean_Egg",function()
+
+local args = {
     [1] = "pets",
-    [2] = "fossil_egg",
+    [2] = "ocean_egg",
     [3] = {}
 }
-game:GetService("ReplicatedStorage").API["ShopAPI/BuyItem"]:InvokeServer(unpack(args))
+
+game:GetService("ReplicatedStorage").API:FindFirstChild("ShopAPI/BuyItem"):InvokeServer(unpack(args))
+
 end)
 CategoryVariableHere:Button("Cracked_Egg",function()
     local args = {
