@@ -457,7 +457,39 @@ local args = {
 
 game:GetService("Players").LocalPlayer.Remote:FireServer(unpack(args))
 end end)
+local list = {"Apple", "Bacon", "Banana", "Broccoli",
+"Candy Cane", "Candy Corn", "Carrot", "Chocolate bar",
+"Chocolate Egg", "Corn", "Cotton Cloud", "Dragon Fin", "Dragonfruit", "Egg",
+"Gemtoothed Piranha", "Glowing Mushroom", "Golden Apple", "Golden Dragonfruit", "Golden Heart",
+"Golden Pear", "Goldfish", "Great Horned Eel", "Heart Cookie", "Heart Treat", "Holo Mantaray",
+"Juniper Berry", "Meat", "Mothback", "Mushroom", "Onion", "Peach", "Pear", "Pineapple",
+"Prickly Pear", "Prime Meat", "Pumpkin", "Sunrise Crab", "Sun Orange", "Sun Whale", 
+"Titan Scale Shark", "Toxic Meat", "Watermelon",}
+CategoryVariableHere:Dropdown("Pick food",list,function(Selected) 
+    list = Selected
+    end)
 
+CategoryVariableHere:Toggle("auto feed dragon",function(State)
+pcall(function()
+feed = State
+game:GetService('RunService').Stepped:connect(function()
+if feed then
+    wait(0.2)
+for i,v in pairs(game:GetService('Players').LocalPlayer.Character.Dragons:GetDescendants()) do
+local args = {
+    [1] = "Feed",
+    [2] = {
+        [1] = v.ID.Value,
+        [2] = list
+    }
+}
+
+game:GetService("Players").LocalPlayer.Function:InvokeServer(unpack(args))
+end
+end
+end)
+end)
+end)
 
 
 CategoryVariableHere:Button("uninvis",function()
@@ -1335,7 +1367,7 @@ CategoryVariableHere:Button("WasteLands",function()
 
 CategoryVariableHere:Button("Prehistoric",function()
     game:GetService("TeleportService"):Teleport(4869039553, LocalPlayer) end)
-
+game:GetService("CoreGui").RobloxGui.NotificationFrame.Visible= false
 local CategoryVariableHere= Lib:Category("Credits and info")
 CategoryVariableHere:Label("Credits to a r q for ui liba")
 CategoryVariableHere:Label("Credits to DekuDimz#7960 aka me lol")
