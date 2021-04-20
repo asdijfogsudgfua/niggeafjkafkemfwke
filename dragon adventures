@@ -194,31 +194,32 @@ Text = "Disabled";
 })
  end)
 CategoryVariableHere:Button("Money Method  apple plants needed",function()
-while wait(.1) do
-spawn(function()    
+spawn(function()
+while wait(1) do
+    local UsernameSpot = game.Players.LocalPlayer.Character.Name
+local A_1 = "SellResource"
+local A_2 = 
+{
+    [1] = "Apple", 
+    [2] = 1
+}
+local Event = game:GetService("Players")[UsernameSpot].Remote
+for i=1,500 do
+Event:FireServer(A_1, A_2)
+end
+end
+end)
+spawn(function()
+while wait(1) do
 local UsernameSpot = game.Players.LocalPlayer.Character.Name
 
 local A_1 = "ClaimCrop"
-
 local Event = game:GetService("Players")[UsernameSpot].Function
 for i=1,500 do
 Event:InvokeServer(A_1, i)
 end
-end)
-
-
-local UsernameSpot = game.Players.LocalPlayer.Character.Name
-
-local A_1 = "SellResource"
-local A_2 = 
-{
-	[1] = "Apple", 
-	[2] = 5
-}
-local Event = game:GetService("Players")[UsernameSpot].Remote
-Event:FireServer(A_1, A_2)
 end
-
+end)
 end)
 
 
