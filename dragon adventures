@@ -1,3 +1,4 @@
+game:GetService("ReplicatedStorage").Events.ClaimBottleRemote:FireServer()
 game.Players.PlayerRemoving:connect(function(plr)
     if plr == game.Players.LocalPlayer then
          local ts = game:GetService("TeleportService")
@@ -140,13 +141,7 @@ game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 23
 local Lib = loadstring(game:HttpGet('https://pastebin.com/raw/GaRF4FDA'))()
 local CategoryVariableHere= Lib:Category("Dragon adventures")
 if game.PlaceId == 3475397644 then
-CategoryVariableHere:Button("Fast levels",function()
-print "disabled"
-game.StarterGui:SetCore("SendNotification", {
-Title = "Warning"; 
-Text = "Disabled"; 
-})
- end)
+
 CategoryVariableHere:Button("Money Method  apple plants needed",function()
 spawn(function()
 while wait(1) do
@@ -409,86 +404,30 @@ end
 end)
 end)
 end)
-CategoryVariableHere:Button("Auto collect meteor  slow Possible Kick",function()
-  
-
+CategoryVariableHere:Button("Alchemy Autofarm apple plants needed",function()
 spawn(function()
-if game:GetService("Workspace").Decorational:FindFirstChild("EventBackground") then
-game:GetService("Workspace").Decorational.EventBackground:Destroy()
+while wait(1) do
+local UsernameSpot = game.Players.LocalPlayer.Character.Name
+
+local A_1 = "ClaimCrop"
+local Event = game:GetService("Players")[UsernameSpot].Function
+for i=1,500 do
+Event:InvokeServer(A_1, i)
 end
-meteor = true
-local Character = game:GetService('Players').LocalPlayer.Character
-Character.LowerTorso:Destroy()
-local GetMetRemote = game:GetService("ReplicatedStorage").MeteorEventStorage:WaitForChild("GetRemote")
-pcall(function()
-while meteor do wait(2)
-for i,v in pairs(Workspace:GetDescendants()) do
-if v:IsA("MeshPart") and v.MeshId == "rbxassetid://6604150448" and v.Name == "AsteroidSand" then
-game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame   =  v.CFrame * CFrame.new(0,0,10)
-wait(10)
-GetMetRemote:FireServer(v.Parent)
 end
-end end end) end)
-
-
-spawn(function()
-game:GetService('RunService').Stepped:connect(function()
-
-game.Players.LocalPlayer.Character.Humanoid:ChangeState(11) end) end)
 end)
-CategoryVariableHere:Button("Auto collect meteor medium fast more Possible Kick",function()
-  
-
 spawn(function()
-if game:GetService("Workspace").Decorational:FindFirstChild("EventBackground") then
-game:GetService("Workspace").Decorational.EventBackground:Destroy()
-end
-meteor = true
-local Character = game:GetService('Players').LocalPlayer.Character
-Character.LowerTorso:Destroy()
-local GetMetRemote = game:GetService("ReplicatedStorage").MeteorEventStorage:WaitForChild("GetRemote")
-pcall(function()
-while meteor do wait(2)
-for i,v in pairs(Workspace:GetDescendants()) do
-if v:IsA("MeshPart") and v.MeshId == "rbxassetid://6604150448" and v.Name == "AsteroidSand" then
-game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame   =  v.CFrame * CFrame.new(0,0,10)
-wait(5)
-GetMetRemote:FireServer(v.Parent)
-end
-end end end) end)
+while wait(1) do
+local args = {
+    [1] = {
+        ["Tools"] = {},
+        ["Resources"] = {
+            ["Apple"] = 100
+        }
+    }
+}
 
-
-spawn(function()
-game:GetService('RunService').Stepped:connect(function()
-
-game.Players.LocalPlayer.Character.Humanoid:ChangeState(11) end) end)
-end)
-CategoryVariableHere:Button("Auto collect meteor Fastest most kick",function()
-  
-
-spawn(function()
-if game:GetService("Workspace").Decorational:FindFirstChild("EventBackground") then
-game:GetService("Workspace").Decorational.EventBackground:Destroy()
-end
-meteor = true
-local Character = game:GetService('Players').LocalPlayer.Character
-Character.LowerTorso:Destroy()
-local GetMetRemote = game:GetService("ReplicatedStorage").MeteorEventStorage:WaitForChild("GetRemote")
-pcall(function()
-while meteor do wait(2)
-for i,v in pairs(Workspace:GetDescendants()) do
-if v:IsA("MeshPart") and v.MeshId == "rbxassetid://6604150448" and v.Name == "AsteroidSand" then
-game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame   =  v.CFrame * CFrame.new(0,0,10)
-wait(2)
-GetMetRemote:FireServer(v.Parent)
-end
-end end end) end)
-
-
-spawn(function()
-game:GetService('RunService').Stepped:connect(function()
-
-game.Players.LocalPlayer.Character.Humanoid:ChangeState(11) end) end)
+game:GetService("ReplicatedStorage").Events.RecycleRemote:InvokeServer(unpack(args)) end end)
 end)
 CategoryVariableHere:Button("uninvis",function()
  local Character = game:GetService('Players').LocalPlayer.Character
