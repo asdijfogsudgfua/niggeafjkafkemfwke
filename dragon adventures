@@ -1,4 +1,5 @@
-game:GetService("ReplicatedStorage").Events.ClaimBottleRemote:FireServer()
+if game.PlaceId == 3475397644 then
+game:GetService("ReplicatedStorage").Events.ClaimBottleRemote:FireServer() end
 game.Players.PlayerRemoving:connect(function(plr)
     if plr == game.Players.LocalPlayer then
          local ts = game:GetService("TeleportService")
