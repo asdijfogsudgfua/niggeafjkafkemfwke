@@ -427,6 +427,9 @@ local args = {
 
 game:GetService("ReplicatedStorage").Events.RecycleRemote:InvokeServer(unpack(args)) end end)
 end)
+CategoryVariableHere:Button("invis",function()
+ local Character = game:GetService('Players').LocalPlayer.Character
+        Character.LowerTorso:Destroy() end)
 CategoryVariableHere:Button("uninvis",function()
  local Character = game:GetService('Players').LocalPlayer.Character
         Character.UpperTorso:Destroy() end)
