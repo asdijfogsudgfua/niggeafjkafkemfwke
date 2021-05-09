@@ -1,3 +1,8 @@
+if not game:IsLoaded() then
+    game.Loaded:Wait()
+end
+wait(5)
+game:GetService("Workspace").Decorational.Plants:remove()
 if game.PlaceId == 3475397644 then
 nigger1 = true
 game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-1094.25134, 121.841377, -129.758102) wait(1)
@@ -8,6 +13,7 @@ game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(70.64598
 local Character = game:GetService('Players').LocalPlayer.Character
         Character.LowerTorso:Destroy()
         wait(3)
+        
 while nigger1 do 
 spawn(function()
 for i,v in pairs(game:GetService("Workspace").HarvestZones.Fruit.Drops.Small:GetDescendants()) do
@@ -763,3 +769,9 @@ end
 Teleport()
 end
 end)
+
+
+spawn(function()
+game:GetService('RunService').Stepped:connect(function()
+game.Players.LocalPlayer.Character.Humanoid:ChangeState(11)
+end) end) 
