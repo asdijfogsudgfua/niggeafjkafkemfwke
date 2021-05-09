@@ -475,6 +475,15 @@ if noclip then
 game.Players.LocalPlayer.Character.Humanoid:ChangeState(11)
 end  end)  
 end) 
+CategoryVariableHere:Toggle("Loop goto eggs",function(State) 
+egg = State
+while egg do wait(1)
+for i,v in pairs(game:GetService("Workspace").HarvestZones.Eggs.Eggs:GetDescendants()) do
+  if v:IsA("MeshPart")  then
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = v.CFrame
+  end
+end 
+end end)
 CategoryVariableHere:Button("Autocollect with serverhop",function()
 loadstring(game:HttpGet('https://raw.githubusercontent.com/asdijfogsudgfua/niggeafjkafkemfwke/main/Dragon-autocollect-serverhop'))()
 local queue_on_teleport = queue_on_teleport or syn and syn.queue_on_teleport [[
