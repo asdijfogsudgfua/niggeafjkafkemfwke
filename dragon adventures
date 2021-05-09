@@ -475,7 +475,11 @@ if noclip then
 game.Players.LocalPlayer.Character.Humanoid:ChangeState(11)
 end  end)  
 end) 
-
+CategoryVariableHere:Button("Autocollect with serverhop",function()
+loadstring(game:HttpGet('https://raw.githubusercontent.com/asdijfogsudgfua/niggeafjkafkemfwke/main/Dragon-autocollect-serverhop'))()
+local queue_on_teleport = queue_on_teleport or syn and syn.queue_on_teleport [[
+local queue_on_teleport = queue_on_teleport or syn and syn.queue_on_teleport 
+loadstring(game:HttpGet('https://raw.githubusercontent.com/asdijfogsudgfua/niggeafjkafkemfwke/main/Dragon-autocollect-serverhop'))()]] end)
 if game.PlaceId == 3475397644 then
 CategoryVariableHere:Toggle("Autocollect",function(State) 
 nigger1 = State
@@ -2692,7 +2696,4 @@ CategoryVariableHere:Button("Prehistoric",function()
 local CategoryVariableHere= Lib:Category("Credits and info")
 CategoryVariableHere:Label("Credits to a r q for ui liba")
 CategoryVariableHere:Label("Credits to DekuDimz#7960 aka me lol")
-CategoryVariableHere:Label("world teleports only work if you own world")
-CategoryVariableHere:Label("Credits to marshmello#3035 for egg tp")
-CategoryVariableHere:Label("Credits to DagerFild#7777 for easter farm never breaking")
 Lib:Reload()
