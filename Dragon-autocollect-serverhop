@@ -2,7 +2,7 @@ if not game:IsLoaded() then
     game.Loaded:Wait()
 end
 wait(5)
-game:GetService("Workspace").Decorational.Plants:remove()
+game:GetService("Workspace").Decorational:remove()
 if game.PlaceId == 3475397644 then
 nigger1 = true
 game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-1094.25134, 121.841377, -129.758102) wait(1)
