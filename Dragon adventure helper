@@ -1,3 +1,9 @@
+game:GetService('RunService').Stepped:connect(function()
+pcall(function()
+game:GetService("ReplicatedStorage"):FindFirstChild("Postie")
+game:GetService("ReplicatedStorage").Postie:remove()
+end) end) 
+
 local BlockedRemotes = {
     "Received",
     "Sent"
@@ -101,17 +107,7 @@ if not KickFunc then
     return nil 
 end
 
-local Character = game:GetService('Players').LocalPlayer.Character
-        local Clone = Character.LowerTorso.Root:Clone()
-        Character.LowerTorso.Root:Destroy()
-        Clone.Parent = Character.LowerTorso
 
-game.Players.LocalPlayer.CharacterAdded:Connect(function()
-wait(3)
-local Character = game:GetService('Players').LocalPlayer.Character
-        local Clone = Character.LowerTorso.Root:Clone()
-        Character.LowerTorso.Root:Destroy()
-        Clone.Parent = Character.LowerTorso end)
 local player = game.Players.LocalPlayer
 local character = player.Character or player.CharacterAdded:Wait()
 local humanoid = character.Humanoid
