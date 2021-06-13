@@ -108,13 +108,7 @@ if not KickFunc then
 end
 
 
-local player = game.Players.LocalPlayer
-local character = player.Character or player.CharacterAdded:Wait()
-local humanoid = character.Humanoid
 
-humanoid.Seated:Connect(function(active, seat)
-    humanoid:ChangeState(Enum.HumanoidStateType.Running)
-end)
 local Lib = loadstring(game:HttpGet('https://raw.githubusercontent.com/1201for/V.G-Hub/main/IMRETARDED'))()
 local CategoryVariableHere= Lib:Category("Jailbreak")
 CategoryVariableHere:Slider("WalkSpeed",16,16,100,function(Val) game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = Val end)
