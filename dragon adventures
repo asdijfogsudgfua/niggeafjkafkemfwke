@@ -1,3 +1,21 @@
+hookfunction(game:GetService("Players").LocalPlayer.Kick, function(...) 
+   return wait(9e9)
+end)
+local mt = getrawmetatable(game)
+local old = mt.__namecall
+
+setreadonly(mt, false)
+
+mt.__namecall = newcclosure(function(self, ...)
+  local args = {...}
+local method = getnamecallmethod()
+ 
+  if method == "Kick" and tostring(self) == "StateRemote" then
+      return 
+   end
+
+  return old(self, ...)
+end)
 if game.PlaceId == 3475397644 then
 game:GetService("ReplicatedStorage").Events.ClaimBottleRemote:FireServer() end
 function getUserRole(user, group)
