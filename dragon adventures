@@ -333,11 +333,15 @@ spawn(function()
 game:GetService('RunService').Stepped:connect(function()
 if dooo then
 game.Players.LocalPlayer.Character.Humanoid:ChangeState(11)
-
+end end) 
+end)
+spawn(function()
+while dooo do wait()
+pcall(function()
 for i,v in pairs(game:GetService("Players").LocalPlayer.PlayerGui.NodeGui:GetDescendants()) do
 if v:IsA("Frame") and v.Name == ("Default") and v:FindFirstChild("IncorrectLabel") and  v.IncorrectLabel.image == "rbxassetid://3339165346" then
 v.IncorrectLabel:remove()
-end end  end end) end)
+end end  end) end  end)
 
 
 
@@ -374,11 +378,15 @@ spawn(function()
 game:GetService('RunService').Stepped:connect(function()
 if dooo1 then
 game.Players.LocalPlayer.Character.Humanoid:ChangeState(11)
-
+end end) 
+end)
+spawn(function()
+while dooo1 do wait()
+pcall(function()
 for i,v in pairs(game:GetService("Players").LocalPlayer.PlayerGui.NodeGui:GetDescendants()) do
 if v:IsA("Frame") and v.Name == ("Default") and v:FindFirstChild("IncorrectLabel") and  v.IncorrectLabel.image == "rbxassetid://3339165346" then
 v.IncorrectLabel:remove()
-end end  end end) end)
+end end end) end end)
 
 
 
@@ -413,11 +421,17 @@ spawn(function()
 game:GetService('RunService').Stepped:connect(function()
 if dooo2 then
 game.Players.LocalPlayer.Character.Humanoid:ChangeState(11)
+end end) 
+end)
+
+spawn(function()
+while dooo2 do wait()
+pcall(function()
 
 for i,v in pairs(game:GetService("Players").LocalPlayer.PlayerGui.NodeGui:GetDescendants()) do
 if v:IsA("Frame") and v.Name == ("Default") and v:FindFirstChild("IncorrectLabel") and  v.IncorrectLabel.image == "rbxassetid://3339165346" then
 v.IncorrectLabel:remove()
-end end  end end) end)
+end end end) end end)
 
 
 
