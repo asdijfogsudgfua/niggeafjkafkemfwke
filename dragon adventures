@@ -1,22 +1,8 @@
-local mt = getrawmetatable(game)
-local old = mt.__namecall
-local protect = newcclosure or protect_function
-
-if not protect then
-protect = function(f) return f end
+f =game:GetService("ReplicatedStorage").Cmdr["Server commands"]
+repeat wait() until game:IsLoaded()
+if f:FindFirstChild("Admin") then
+f:FindFirstChild("Admin"):Destroy()
 end
-
-setreadonly(mt, false)
-mt.__namecall = protect(function(self, ...)
-local method = getnamecallmethod()
-if method == "Kick" then
-wait(9e9)
-return
-end
-return old(self, ...)
-end)
-hookfunction(game:GetService("Players").LocalPlayer.Kick,protect(function() wait(9e9) end))
-
 if game.PlaceId == 3475397644 then
 game:GetService("ReplicatedStorage").Events.ClaimBottleRemote:FireServer() end
 function getUserRole(user, group)
@@ -333,15 +319,11 @@ spawn(function()
 game:GetService('RunService').Stepped:connect(function()
 if dooo then
 game.Players.LocalPlayer.Character.Humanoid:ChangeState(11)
-end end) 
-end)
-spawn(function()
-while dooo do wait()
-pcall(function()
+
 for i,v in pairs(game:GetService("Players").LocalPlayer.PlayerGui.NodeGui:GetDescendants()) do
 if v:IsA("Frame") and v.Name == ("Default") and v:FindFirstChild("IncorrectLabel") and  v.IncorrectLabel.image == "rbxassetid://3339165346" then
 v.IncorrectLabel:remove()
-end end  end) end  end)
+end end  end end) end)
 
 
 
@@ -378,15 +360,11 @@ spawn(function()
 game:GetService('RunService').Stepped:connect(function()
 if dooo1 then
 game.Players.LocalPlayer.Character.Humanoid:ChangeState(11)
-end end) 
-end)
-spawn(function()
-while dooo1 do wait()
-pcall(function()
+
 for i,v in pairs(game:GetService("Players").LocalPlayer.PlayerGui.NodeGui:GetDescendants()) do
 if v:IsA("Frame") and v.Name == ("Default") and v:FindFirstChild("IncorrectLabel") and  v.IncorrectLabel.image == "rbxassetid://3339165346" then
 v.IncorrectLabel:remove()
-end end end) end end)
+end end  end end) end)
 
 
 
@@ -421,17 +399,11 @@ spawn(function()
 game:GetService('RunService').Stepped:connect(function()
 if dooo2 then
 game.Players.LocalPlayer.Character.Humanoid:ChangeState(11)
-end end) 
-end)
-
-spawn(function()
-while dooo2 do wait()
-pcall(function()
 
 for i,v in pairs(game:GetService("Players").LocalPlayer.PlayerGui.NodeGui:GetDescendants()) do
 if v:IsA("Frame") and v.Name == ("Default") and v:FindFirstChild("IncorrectLabel") and  v.IncorrectLabel.image == "rbxassetid://3339165346" then
 v.IncorrectLabel:remove()
-end end end) end end)
+end end  end end) end)
 
 
 
