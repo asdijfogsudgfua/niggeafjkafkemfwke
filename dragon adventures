@@ -1,16 +1,34 @@
+local mt = getrawmetatable(game)
+local old = mt.__namecall
+local protect = newcclosure or protect_function
+
+if not protect then
+protect = function(f) return f end
+end
+
+setreadonly(mt, false)
+mt.__namecall = protect(function(self, ...)
+local method = getnamecallmethod()
+if method == "Kick" then
+wait(9e9)
+return
+end
+return old(self, ...)
+end)
+hookfunction(game:GetService("Players").LocalPlayer.Kick,protect(function() wait(9e9) end))
+
 if game.PlaceId == 3475397644 then
 game:GetService("ReplicatedStorage").Events.ClaimBottleRemote:FireServer() end
 function getUserRole(user, group)
-    return user:GetRoleInGroup(group)
+return user:GetRoleInGroup(group)
 end
- 
 game.Players.PlayerAdded:Connect(function(player)
-    if getUserRole(player, 2919215) == "📝Tester" or getUserRole(player, 2919215) == "❤️Contributor"  
-    or  getUserRole(player, 2919215) == "📣Staff" or getUserRole(player, 2919215) == "💎Administrator" or getUserRole(player, 2919215) == "🔧Other Developer" or
-     getUserRole(player, 2919215) == "🛠️Developer" or getUserRole(player, 2919215) == "👑Co-Owner" or  getUserRole(player, 2919215) == "👑Owner" 
-    then
-      fuckyou() 
-    end
+if getUserRole(player, 2919215) == "📝Tester" or getUserRole(player, 2919215) == "❤️Contributor"  
+or  getUserRole(player, 2919215) == "📣Staff" or getUserRole(player, 2919215) == "💎Administrator" or getUserRole(player, 2919215) == "🔧Other Developer" or
+getUserRole(player, 2919215) == "🛠️Developer" or getUserRole(player, 2919215) == "👑Co-Owner" or  getUserRole(player, 2919215) == "👑Owner" 
+then
+ fuckyou() 
+end
 end)
 function fuckyou()
 local PlaceID = game.PlaceId
@@ -82,11 +100,10 @@ local Meta = getrawmetatable(game)
 local NewIndex = Meta.__newindex
 setreadonly(Meta, false)
 Meta.__newindex = newcclosure(function(t, k, ...)
-    
-   if not checkcaller() and (k == "WalkSpeed" or k == "JumpPower") then
-       return
-   end
-   NewIndex(t, k, ...)
+if not checkcaller() and (k == "WalkSpeed" or k == "JumpPower") then
+return
+end
+NewIndex(t, k, ...)
 end)
 setreadonly(Meta, true)
 game.Players.LocalPlayer.Character.Humanoid.JumpPower = 50
@@ -101,12 +118,11 @@ spawn(function()
 while wait(1) do
 
 for i,v in pairs(game:GetService("Workspace").Plots[game.Players.LocalPlayer.Name].Base.CanvasObjects:GetDescendants()) do
-  if v:IsA("Model") and v.Name == "Plant_Apple"  then
+if v:IsA("Model") and v.Name == "Plant_Apple"  then
 v.Tick.Value = 0
-
-  end
+end
 end 
-    local UsernameSpot = game.Players.LocalPlayer.Character.Name
+local UsernameSpot = game.Players.LocalPlayer.Character.Name
 local A_1 = "SellResource"
 local A_2 = 
 {
