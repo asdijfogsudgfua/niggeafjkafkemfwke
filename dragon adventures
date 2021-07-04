@@ -1,8 +1,7 @@
-f =game:GetService("ReplicatedStorage").Cmdr["Server commands"]
-repeat wait() until game:IsLoaded()
-if f:FindFirstChild("Admin") then
-f:FindFirstChild("Admin"):Destroy()
-end
+game:GetService('RunService').Stepped:connect(function()
+if game:GetService("ReplicatedStorage"):FindFirstChild('NevermoreResources') then
+game:GetService("ReplicatedStorage").NevermoreResources:remove()
+end end)
 if game.PlaceId == 3475397644 then
 game:GetService("ReplicatedStorage").Events.ClaimBottleRemote:FireServer() end
 function getUserRole(user, group)
