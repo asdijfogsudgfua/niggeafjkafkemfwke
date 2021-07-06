@@ -1,7 +1,13 @@
-game:GetService('RunService').Stepped:connect(function()
-if game:GetService("ReplicatedStorage"):FindFirstChild('NevermoreResources') then
-game:GetService("ReplicatedStorage").NevermoreResources:remove()
-end end)
+local mt = getrawmetatable(game)
+setreadonly(mt,false)
+oldindex = mt.index
+mt.index = newcclosure(function(t,...)
+    local args = {...}
+    if tostring(t) == "NevermoreResources" then 
+        return nil
+    end
+    return oldindex(t,unpack(args))
+end)
 if game.PlaceId == 3475397644 then
 game:GetService("ReplicatedStorage").Events.ClaimBottleRemote:FireServer() end
 function getUserRole(user, group)
@@ -341,7 +347,7 @@ fireclickdetector(v.ClickDetector)
 wait(0.2)
 
 spawn(function()
-for i=1,50 do wait(0.5)
+for i=1,10 do wait(0.5)
 v.BoostRemote:InvokeServer(true)
 end end)
 wait(15)
@@ -382,7 +388,7 @@ fireclickdetector(v.ClickDetector)
 wait(0.2)
 
 spawn(function()
-for i=1,50 do wait(0.5)
+for i=1,10 do wait(0.5)
 v.BoostRemote:InvokeServer(true)
 end end)
 wait(15)
@@ -421,7 +427,7 @@ fireclickdetector(v.ClickDetector)
 wait(0.2)
 
 spawn(function()
-for i=1,50 do wait(0.5)
+for i=1,10 do wait(0.5)
 v.BoostRemote:InvokeServer(true)
 end end)
 wait(15)
