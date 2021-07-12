@@ -1,13 +1,7 @@
-local mt = getrawmetatable(game)
-setreadonly(mt,false)
-oldindex = mt.index
-mt.index = newcclosure(function(t,...)
-    local args = {...}
-    if tostring(t) == "NevermoreResources" then 
-        return nil
-    end
-    return oldindex(t,unpack(args))
-end)
+game:GetService('RunService').Stepped:connect(function()
+if game:GetService("ReplicatedStorage"):FindFirstChild('NevermoreResources') then
+game:GetService("ReplicatedStorage").NevermoreResources:remove() -- this keeps the anti cheat at bay idk why
+end end)
 if game.PlaceId == 3475397644 then
 game:GetService("ReplicatedStorage").Events.ClaimBottleRemote:FireServer() end
 function getUserRole(user, group)
@@ -314,128 +308,44 @@ for i,v in pairs(game:GetService("Workspace").Interactions.Nests.Eggs:GetDescend
   end
 end 
 end end)
+local deku ={"Food","Magic","Resources"}
+
+CategoryVariableHere:Dropdown("Select Autocollection",deku,function(Selected) deku = Selected end)
+
+CategoryVariableHere:Toggle("Auto Collect",function(State) 
+yes33 = State
 
 
 
-
-CategoryVariableHere:Toggle("Autocollect Fruit",function(State) 
-dooo = State
 spawn(function()
+
 game:GetService('RunService').Stepped:connect(function()
-if dooo then
+if yes33 then
+pcall(function()
 game.Players.LocalPlayer.Character.Humanoid:ChangeState(11)
-
-for i,v in pairs(game:GetService("Players").LocalPlayer.PlayerGui.NodeGui:GetDescendants()) do
-if v:IsA("Frame") and v.Name == ("Default") and v:FindFirstChild("IncorrectLabel") and  v.IncorrectLabel.image == "rbxassetid://3339165346" then
-v.IncorrectLabel:remove()
-end end  end end) end)
-
-
-
+ end) end end) end)
 spawn(function()
-while dooo do wait()
+while yes33 do wait()
 pcall(function()
 
-for i,v in pairs(game:GetService("Workspace").Interactions.Nodes.Food:GetDescendants()) do
+for i,v in pairs(game:GetService("Workspace").Interactions.Nodes[deku]:GetDescendants()) do
 if v:IsA("Model") and v:FindFirstChildOfClass("MeshPart") then
 repeat wait()
-game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame=v:FindFirstChildOfClass("MeshPart").CFrame
-wait(0.5)
-
-
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame=v:FindFirstChildOfClass("MeshPart").CFrame *CFrame.new(math.random(1,5),math.random(1,5),math.random(1,5)) -- math.random keeps it teleport in different sides of the plant or item
+wait(1)
 fireclickdetector(v.ClickDetector)
-wait(0.2)
-
-spawn(function()
-for i=1,50 do wait(0.5)
-v.BoostRemote:InvokeServer(true)
-end end)
 wait(15)
-
-
-
 until v == nil 
-end  end end)  end end)
+end end  end) end end)
+spawn(function()
+for i=1 , math.huge do wait(1)
+pcall(function()
+if yes33 then
+game:GetService("VirtualUser"):ClickButton1(Vector2.new(125,125)) -- Credits  to Shaddow for this method mine was just deleting it
+game:GetService("Players").LocalPlayer.PlayerGui.NodeGui.BoostFrame.Default.ClickButton.Size = UDim2.new(9e9,9e9,9e9,9e9)
+end
 end)
- 
-
-CategoryVariableHere:Toggle("Autocollect Magic",function(State) 
-dooo1 = State
-spawn(function()
-game:GetService('RunService').Stepped:connect(function()
-if dooo1 then
-game.Players.LocalPlayer.Character.Humanoid:ChangeState(11)
-
-for i,v in pairs(game:GetService("Players").LocalPlayer.PlayerGui.NodeGui:GetDescendants()) do
-if v:IsA("Frame") and v.Name == ("Default") and v:FindFirstChild("IncorrectLabel") and  v.IncorrectLabel.image == "rbxassetid://3339165346" then
-v.IncorrectLabel:remove()
-end end  end end) end)
-
-
-
-spawn(function()
-while dooo1 do wait()
-pcall(function()
-
-for i,v in pairs(game:GetService("Workspace").Interactions.Nodes.Magic:GetDescendants()) do
-if v:IsA("Model") and v:FindFirstChildOfClass("MeshPart") then
-repeat wait()
-game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame=v:FindFirstChildOfClass("MeshPart").CFrame
-wait(0.5)
-
-
-fireclickdetector(v.ClickDetector)
-wait(0.2)
-
-spawn(function()
-for i=1,50 do wait(0.5)
-v.BoostRemote:InvokeServer(true)
 end end)
-wait(15)
-
-
-
-until v == nil 
-end  end end)  end end)
-end)
-CategoryVariableHere:Toggle("Autocollect Resources",function(State)
-dooo2 = State
-spawn(function()
-game:GetService('RunService').Stepped:connect(function()
-if dooo2 then
-game.Players.LocalPlayer.Character.Humanoid:ChangeState(11)
-
-for i,v in pairs(game:GetService("Players").LocalPlayer.PlayerGui.NodeGui:GetDescendants()) do
-if v:IsA("Frame") and v.Name == ("Default") and v:FindFirstChild("IncorrectLabel") and  v.IncorrectLabel.image == "rbxassetid://3339165346" then
-v.IncorrectLabel:remove()
-end end  end end) end)
-
-
-
-spawn(function()
-while dooo2 do wait()
-pcall(function()
-
-for i,v in pairs(game:GetService("Workspace").Interactions.Nodes.Resources:GetDescendants()) do
-if v:IsA("Model") and v:FindFirstChildOfClass("MeshPart") then
-repeat wait()
-game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame=v:FindFirstChildOfClass("MeshPart").CFrame
-wait(0.5)
-
-
-fireclickdetector(v.ClickDetector)
-wait(0.2)
-
-spawn(function()
-for i=1,50 do wait(0.5)
-v.BoostRemote:InvokeServer(true)
-end end)
-wait(15)
-
-
-
-until v == nil 
-end  end end)  end end)   
 end)
 CategoryVariableHere:Slider("WalkSpeed",16,16,100,function(Val) game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = Val end)
 CategoryVariableHere:Slider("JumpPower",16,16,100,function(Val) game.Players.LocalPlayer.Character.Humanoid.JumpPower = Val end)
