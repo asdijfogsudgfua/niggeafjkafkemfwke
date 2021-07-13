@@ -1,6 +1,4 @@
 local mt = getrawmetatable(game:GetService("ReplicatedStorage").NevermoreResources.Modules.GALogSettings)
-make_writeable(mt)
-
 local namecall = mt.__namecall
 
 mt.__namecall = newcclosure(function(self, ...)
