@@ -1,7 +1,8 @@
 local mt = getrawmetatable(game:GetService("ReplicatedStorage").NevermoreResources.Modules.GALogSettings)
+make_writeable(mt)
 
 local namecall = mt.__namecall
-setreadonly(mt, false)
+
 mt.__namecall = newcclosure(function(self, ...)
     local method = getnamecallmethod()
     local args = {...}
@@ -11,7 +12,6 @@ mt.__namecall = newcclosure(function(self, ...)
     end
     return namecall(self, table.unpack(args))
 end)
-setreadonly(mt, true)
 if game.PlaceId == 3475397644 then
 game:GetService("ReplicatedStorage").Events.ClaimBottleRemote:FireServer() end
 function getUserRole(user, group)
@@ -336,12 +336,13 @@ pcall(function()
 
 for i,v in pairs(game:GetService("Workspace").Interactions.Nodes[deku]:GetDescendants()) do
 if v:IsA("Model") and v:FindFirstChildOfClass("MeshPart") then
-repeat wait()
-game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame=v:FindFirstChildOfClass("MeshPart").CFrame 
+
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame=v:FindFirstChildOfClass("MeshPart").CFrame *CFrame.new(20,-3,0)
 wait(1)
+game.Players.LocalPlayer.Character.Humanoid:MoveTo(v:FindFirstChildOfClass("MeshPart").CFrame.Position)
+wait(3)
 fireclickdetector(v.ClickDetector)
 wait(15)
-until v == nil 
 end end  end) end end)
 spawn(function()
 for i=1 , math.huge do wait(1)
