@@ -1,17 +1,4 @@
-local mt = getrawmetatable(game:GetService("ReplicatedStorage").NevermoreResources.Modules.GALogSettings)
-make_writeable(mt)
 
-local namecall = mt.__namecall
-
-mt.__namecall = newcclosure(function(self, ...)
-    local method = getnamecallmethod()
-    local args = {...}
-
-    if method == true   then
-       return false
-    end
-    return namecall(self, table.unpack(args))
-end)
 if game.PlaceId == 3475397644 then
 game:GetService("ReplicatedStorage").Events.ClaimBottleRemote:FireServer() end
 function getUserRole(user, group)
