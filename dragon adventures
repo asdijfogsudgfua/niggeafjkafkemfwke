@@ -89,10 +89,13 @@ end)
 setreadonly(Meta, true)
 game.Players.LocalPlayer.Character.Humanoid.JumpPower = 50
 game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 23
-local deku1 = {"SolsticeFlares","SolsticeBoxes"}
+
 local Lib = loadstring(game:HttpGet('https://raw.githubusercontent.com/1201for/V.G-Hub/main/IMRETARDED'))()
 local CategoryVariableHere= Lib:Category("Dragon adventures")
+
 if game.PlaceId == 5777228223 then
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(90, 245, -397)
+local deku1 = {"SolsticeFlares","SolsticeBoxes"}
 CategoryVariableHere:Toggle("Auto Collect Solstice",function(State) 
 sw1 = State
 spawn(function()
@@ -103,10 +106,8 @@ game.Players.LocalPlayer.Character.Humanoid:ChangeState(11)
  end) end end) end)
 spawn(function()
 while sw1 do wait()
-pcall(function()
-
 for i,v in pairs(game:GetService("Workspace").Interactions.Nodes[deku1]:GetDescendants()) do
-if v:IsA("Model")  and v:FindFirstChildOfClass("MeshPart") then
+if v:IsA("Model") and v.Name == "Solstice2021"  and v:FindFirstChildOfClass("MeshPart") then
 
 game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame=v:FindFirstChildOfClass("MeshPart").CFrame *CFrame.new(20,-3,0)
 wait(1)
@@ -117,7 +118,7 @@ wait(15)
 if not sw1 then
 break
 end
-end end  end) end end)
+end end   end end)
 spawn(function()
 for i=1 , math.huge do wait(1)
 pcall(function()
