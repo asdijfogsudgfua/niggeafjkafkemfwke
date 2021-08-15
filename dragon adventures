@@ -1,4 +1,3 @@
-
 if game.PlaceId == 3475397644 then
 game:GetService("ReplicatedStorage").Events.ClaimBottleRemote:FireServer() end
 function getUserRole(user, group)
@@ -106,7 +105,7 @@ spawn(function()
 while sw1 do wait()
 pcall(function()
 
-for i,v in pairs(game:GetService("Workspace").Interactions.Nodes[deku]:GetDescendants()) do
+for i,v in pairs(game:GetService("Workspace").Interactions.Nodes[deku1]:GetDescendants()) do
 if v:IsA("Model")  and v:FindFirstChildOfClass("MeshPart") then
 
 game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame=v:FindFirstChildOfClass("MeshPart").CFrame *CFrame.new(20,-3,0)
