@@ -90,8 +90,46 @@ setreadonly(Meta, true)
 game.Players.LocalPlayer.Character.Humanoid.JumpPower = 50
 game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 23
 
-local Lib = loadstring(game:HttpGet('https://pastebin.com/raw/GaRF4FDA'))()
+local Lib = loadstring(game:HttpGet('https://raw.githubusercontent.com/1201for/V.G-Hub/main/IMRETARDED'))()
 local CategoryVariableHere= Lib:Category("Dragon adventures")
+if game.PlaceId == 5777228223 then
+CategoryVariableHere:Toggle("Auto Collect Solstice",function(State) 
+sw1 = State
+spawn(function()
+game:GetService('RunService').Stepped:connect(function()
+if sw1 then
+pcall(function()
+game.Players.LocalPlayer.Character.Humanoid:ChangeState(11)
+ end) end end) end)
+spawn(function()
+while sw1 do wait()
+pcall(function()
+
+for i,v in pairs(game:GetService("Workspace").Interactions.Nodes:GetDescendants()) do
+if v:IsA("Model") and v.Name == "Solstice2021" and v:FindFirstChildOfClass("MeshPart") then
+
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame=v:FindFirstChildOfClass("MeshPart").CFrame *CFrame.new(20,-3,0)
+wait(1)
+game.Players.LocalPlayer.Character.Humanoid:MoveTo(v:FindFirstChildOfClass("MeshPart").CFrame.Position)
+wait(3)
+fireclickdetector(v.ClickDetector)
+wait(15)
+if not sw1 then
+break
+end
+end end  end) end end)
+spawn(function()
+for i=1 , math.huge do wait(1)
+pcall(function()
+if sw1 then
+if game:GetService("Players").LocalPlayer.PlayerGui.NodeGui.BoostFrame.Default.ClickButton.Visible == true then
+game:GetService("VirtualUser"):ClickButton1(Vector2.new(140,140)) -- Credits  to Shaddow for this method mine was just deleting it
+game:GetService("Players").LocalPlayer.PlayerGui.NodeGui.BoostFrame.Default.ClickButton.Size = UDim2.new(9e9,9e9,9e9,9e9)
+end end
+end) 
+end end)
+end)
+end
 if game.PlaceId == 3475397644 then
 CategoryVariableHere:Toggle("Money Method  apple plants needed",function(State) 
 red = State
@@ -512,6 +550,9 @@ end end)
 local CategoryVariableHere= Lib:Category("World Teleports")
 CategoryVariableHere:Button("Lobby",function()
 game:GetService("TeleportService"):Teleport(3475397644, LocalPlayer) end)
+
+CategoryVariableHere:Button("Solstice 2021",function()
+game:GetService("TeleportService"):Teleport(5777228223, LocalPlayer) end)
 
 CategoryVariableHere:Button("Accessory",function()
 game:GetService("TeleportService"):Teleport(5391312853, LocalPlayer) end)
