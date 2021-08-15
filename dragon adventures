@@ -94,6 +94,7 @@ local Lib = loadstring(game:HttpGet('https://raw.githubusercontent.com/1201for/V
 local CategoryVariableHere= Lib:Category("Dragon adventures")
 
 if game.PlaceId == 5777228223 then
+CategoryVariableHere:Label("Solstice boxes need the cave open to collect")
 game.StarterGui:SetCore("SendNotification", {
 Title = "Setting up";
 Text = "Wait just two seconds im getting everything in check for you";
