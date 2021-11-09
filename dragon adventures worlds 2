@@ -1,82 +1,83 @@
 if game.PlaceId == 6505734854 then
-loadstring(game:HttpGet('https://raw.githubusercontent.com/1201for/V.G-Hub/main/Shindo'))()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/1201for/V.G-Hub/main/Shindo"))()
 elseif game.PlaceId == 6069958474 then
-loadstring(game:HttpGet('https://raw.githubusercontent.com/1201for/V.G-Hub/main/Shindo'))()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/1201for/V.G-Hub/main/Shindo"))()
 elseif game.PlaceId == 5664805984 then
-loadstring(game:HttpGet('https://raw.githubusercontent.com/1201for/V.G-Hub/main/Shindo'))()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/1201for/V.G-Hub/main/Shindo"))()
 elseif game.PlaceId == 5664803952 then
-loadstring(game:HttpGet('https://raw.githubusercontent.com/1201for/V.G-Hub/main/Shindo'))()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/1201for/V.G-Hub/main/Shindo"))()
 elseif game.PlaceId == 5743370338 then
-loadstring(game:HttpGet('https://raw.githubusercontent.com/1201for/V.G-Hub/main/Shindo'))()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/1201for/V.G-Hub/main/Shindo"))()
 elseif game.PlaceId == 5307141034 then
-loadstring(game:HttpGet('https://raw.githubusercontent.com/1201for/V.G-Hub/main/Shindo'))()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/1201for/V.G-Hub/main/Shindo"))()
 elseif game.PlaceId == 6593188260 then
-loadstring(game:HttpGet('https://raw.githubusercontent.com/1201for/V.G-Hub/main/Shindo'))()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/1201for/V.G-Hub/main/Shindo"))()
 elseif game.PlaceId == 6593187011 then
-loadstring(game:HttpGet('https://raw.githubusercontent.com/1201for/V.G-Hub/main/Shindo'))()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/1201for/V.G-Hub/main/Shindo"))()
 elseif game.PlaceId == 6792491761 then
-    loadstring(game:HttpGet('https://raw.githubusercontent.com/1201for/V.G-Hub/main/Shindo'))()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/1201for/V.G-Hub/main/Shindo"))()
 elseif game.PlaceId == 5842796159 then
-    loadstring(game:HttpGet('https://raw.githubusercontent.com/1201for/V.G-Hub/main/Shindo'))()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/1201for/V.G-Hub/main/Shindo"))()
 elseif game.PlaceId == 5842796159 then
-    loadstring(game:HttpGet('https://raw.githubusercontent.com/1201for/V.G-Hub/main/Shindo'))()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/1201for/V.G-Hub/main/Shindo"))()
 elseif game.PlaceId == 6834220153 then
-    loadstring(game:HttpGet('https://raw.githubusercontent.com/1201for/V.G-Hub/main/Shindo'))()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/1201for/V.G-Hub/main/Shindo"))()
 elseif game.PlaceId == 6792390620 then
-    loadstring(game:HttpGet('https://raw.githubusercontent.com/1201for/V.G-Hub/main/Shindo'))()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/1201for/V.G-Hub/main/Shindo"))()
 elseif game.PlaceId == 5842799532 then
-    loadstring(game:HttpGet('https://raw.githubusercontent.com/1201for/V.G-Hub/main/Shindo'))()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/1201for/V.G-Hub/main/Shindo"))()
 elseif game.PlaceId == 4824219089 then
-    loadstring(game:HttpGet('https://raw.githubusercontent.com/1201for/V.G-Hub/main/Shindo'))()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/1201for/V.G-Hub/main/Shindo"))()
 elseif game.PlaceId == 5842798556 then
-    loadstring(game:HttpGet('https://raw.githubusercontent.com/1201for/V.G-Hub/main/Shindo'))()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/1201for/V.G-Hub/main/Shindo"))()
 elseif game.PlaceId == 5842797437 then
-    loadstring(game:HttpGet('https://raw.githubusercontent.com/1201for/V.G-Hub/main/Shindo'))()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/1201for/V.G-Hub/main/Shindo"))()
 elseif game.PlaceId == 6792392153 then
-    loadstring(game:HttpGet('https://raw.githubusercontent.com/1201for/V.G-Hub/main/Shindo'))()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/1201for/V.G-Hub/main/Shindo"))()
 elseif game.PlaceId == 5255110447 then
-    loadstring(game:HttpGet('https://raw.githubusercontent.com/1201for/V.G-Hub/main/Shindo'))()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/1201for/V.G-Hub/main/Shindo"))()
 elseif game.PlaceId == 6792391835 then
-    loadstring(game:HttpGet('https://raw.githubusercontent.com/1201for/V.G-Hub/main/Shindo'))()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/1201for/V.G-Hub/main/Shindo"))()
 elseif game.PlaceId == 5465404122 then
-    loadstring(game:HttpGet('https://raw.githubusercontent.com/1201for/V.G-Hub/main/Shindo'))()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/1201for/V.G-Hub/main/Shindo"))()
 elseif game.PlaceId == 6984568732 then
-        loadstring(game:HttpGet('https://raw.githubusercontent.com/1201for/V.G-Hub/main/Shindo'))()
- elseif game.PlaceId == 4616652839 then
-        loadstring(game:HttpGet('https://raw.githubusercontent.com/1201for/V.G-Hub/main/Shindo'))()
- elseif game.PlaceId == 5943874201 then
-        loadstring(game:HttpGet('https://raw.githubusercontent.com/1201for/V.G-Hub/main/Shindo'))()
- elseif game.PlaceId == 6341670805 then
-        loadstring(game:HttpGet('https://raw.githubusercontent.com/1201for/V.G-Hub/main/Shindo'))()
- elseif game.PlaceId == 5431069982 then
-        loadstring(game:HttpGet('https://raw.githubusercontent.com/1201for/V.G-Hub/main/Shindo'))()
- elseif game.PlaceId == 4601350394 then
-        loadstring(game:HttpGet('https://raw.githubusercontent.com/1201for/V.G-Hub/main/Shindo'))()
- elseif game.PlaceId == 4601350214 then
-        loadstring(game:HttpGet('https://raw.githubusercontent.com/1201for/V.G-Hub/main/Shindo'))()
- elseif game.PlaceId == 5447073001 then
-        loadstring(game:HttpGet('https://raw.githubusercontent.com/1201for/V.G-Hub/main/Shindo'))()
- elseif game.PlaceId == 4601350760 then
-        loadstring(game:HttpGet('https://raw.githubusercontent.com/1201for/V.G-Hub/main/Shindo'))()
- elseif game.PlaceId == 4601350809 then
-        loadstring(game:HttpGet('https://raw.githubusercontent.com/1201for/V.G-Hub/main/Shindo'))()
- elseif game.PlaceId == 5943872934 then
-        loadstring(game:HttpGet('https://raw.githubusercontent.com/1201for/V.G-Hub/main/Shindo'))()
-  elseif game.PlaceId == 5084678830 then
-        loadstring(game:HttpGet('https://raw.githubusercontent.com/1201for/V.G-Hub/main/Shindo'))()
-  elseif game.PlaceId == 6901575446 then
-        loadstring(game:HttpGet('https://raw.githubusercontent.com/1201for/V.G-Hub/main/Shindo'))()
-  elseif game.PlaceId == 6602058266 then
-        loadstring(game:HttpGet('https://raw.githubusercontent.com/1201for/V.G-Hub/main/Shindo'))()
-  elseif game.PlaceId == 5431071837 then
-        loadstring(game:HttpGet('https://raw.githubusercontent.com/1201for/V.G-Hub/main/Shindo'))()
-  elseif game.PlaceId == 5824792748 then
-        loadstring(game:HttpGet('https://raw.githubusercontent.com/1201for/V.G-Hub/main/Shindo'))()
-  elseif game.PlaceId == 4601350656 then
-        loadstring(game:HttpGet('https://raw.githubusercontent.com/1201for/V.G-Hub/main/Shindo'))()
-    elseif game.PlaceId ==  6986372023 then
-        loadstring(game:HttpGet('https://raw.githubusercontent.com/1201for/V.G-Hub/main/Shindo'))()
-            elseif game.PlaceId ==  7534339269 then
-        loadstring(game:HttpGet('https://raw.githubusercontent.com/1201for/V.G-Hub/main/Shindo'))()
-
-    end
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/1201for/V.G-Hub/main/Shindo"))()
+elseif game.PlaceId == 4616652839 then
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/1201for/V.G-Hub/main/Shindo"))()
+elseif game.PlaceId == 5943874201 then
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/1201for/V.G-Hub/main/Shindo"))()
+elseif game.PlaceId == 6341670805 then
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/1201for/V.G-Hub/main/Shindo"))()
+elseif game.PlaceId == 5431069982 then
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/1201for/V.G-Hub/main/Shindo"))()
+elseif game.PlaceId == 4601350394 then
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/1201for/V.G-Hub/main/Shindo"))()
+elseif game.PlaceId == 4601350214 then
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/1201for/V.G-Hub/main/Shindo"))()
+elseif game.PlaceId == 5447073001 then
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/1201for/V.G-Hub/main/Shindo"))()
+elseif game.PlaceId == 4601350760 then
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/1201for/V.G-Hub/main/Shindo"))()
+elseif game.PlaceId == 4601350809 then
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/1201for/V.G-Hub/main/Shindo"))()
+elseif game.PlaceId == 5943872934 then
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/1201for/V.G-Hub/main/Shindo"))()
+elseif game.PlaceId == 5084678830 then
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/1201for/V.G-Hub/main/Shindo"))()
+elseif game.PlaceId == 6901575446 then
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/1201for/V.G-Hub/main/Shindo"))()
+elseif game.PlaceId == 6602058266 then
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/1201for/V.G-Hub/main/Shindo"))()
+elseif game.PlaceId == 5431071837 then
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/1201for/V.G-Hub/main/Shindo"))()
+elseif game.PlaceId == 5824792748 then
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/1201for/V.G-Hub/main/Shindo"))()
+elseif game.PlaceId == 4601350656 then
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/1201for/V.G-Hub/main/Shindo"))()
+elseif game.PlaceId == 6986372023 then
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/1201for/V.G-Hub/main/Shindo"))()
+elseif game.PlaceId == 7534339269 then
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/1201for/V.G-Hub/main/Shindo"))()
+elseif game.PlaceId == 7524811367 then
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/1201for/V.G-Hub/main/Shindo"))()
+end
