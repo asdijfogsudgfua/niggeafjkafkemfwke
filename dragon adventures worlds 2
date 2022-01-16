@@ -82,5 +82,9 @@ elseif game.PlaceId == 7524811367 then
     loadstring(game:HttpGet("https://raw.githubusercontent.com/1201for/V.G-Hub/main/Shindo"))()
 elseif game.PlaceId == 5451398863 then
     loadstring(game:HttpGet("https://raw.githubusercontent.com/1201for/V.G-Hub/main/Shindo"))()
+elseif game.PlaceId == 8472733618 then
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/1201for/V.G-Hub/main/Shindo"))()
+elseif game.PlaceId == 7214033433 then
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/1201for/V.G-Hub/main/Shindo"))()
 
 end
